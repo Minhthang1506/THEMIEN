@@ -178,9 +178,8 @@
 }
 .slider__imgs {
     width: 100%;
-    height: 80vh;
-    background: url(../img/sliders/slider_new_products.png);
-    background-size: contain;
+    height: calc(100vw / 2.2 - var(--margin-body));
+    background: url(../img/sliders/slider_new_products.png) no-repeat center / cover;
     display: flex;
     justify-content: space-between;
     overflow: hidden;
