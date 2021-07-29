@@ -178,7 +178,7 @@
 }
 .slider__imgs {
     width: 100%;
-    height: calc(100vw / 2.2 - var(--margin-body));
+    height: 80vh;
     background: url(../img/sliders/slider_new_products.png);
     background-size: contain;
     display: flex;
