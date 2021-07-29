@@ -1,0 +1,54 @@
+:root {
+    --white-color: #ffffff;
+    --black-color: #000;
+    --text-color: #333;
+    --hover-opacity: 0.8;
+    --transform-btn-bigger: 1.05;
+    --gold-primary: #d9bd94;
+    --nav-font-size: 1.3rem;
+    --content-font-size: calc(1.3rem);
+    --header-title: 2.6rem;
+    --navbar-caret-icon: 0.6rem;
+    --header-height-nomal: 90px;
+    --margin-body: 80px;
+    --translateX-left-nav: -100px;
+    --translateX-right-nav: 100px;
+}
+
+* {
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%; /*trick for easely remember*/
+    line-height: 1.6rem;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+.grid {
+    width: 1200px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.grid__full-width {
+    width: 100%;
+}
+
+.grid__row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Begin: Animation =================================================================*/
+@keyframes appearance {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* End: Animation =================================================================*/
