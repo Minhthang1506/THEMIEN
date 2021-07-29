@@ -212,12 +212,12 @@
     transform: translateX(var(--translateX-right-nav));
 }
 .slider__indexs {
-    margin:16px auto;
+    margin:0 auto;
     display: flex;
     width: 200px;
     justify-content: space-between;
     position: absolute;
-    bottom:0;
+    bottom:1%;
     right:0;
     left: 0;
 }
