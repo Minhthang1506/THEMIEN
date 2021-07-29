@@ -199,6 +199,7 @@
 .slider-img__nav:hover {
     opacity: .5;
     width: auto;
+    cursor: pointer;
 }
 .pull-left {
     transform: translateX(var(--translateX-left-nav));
@@ -225,6 +226,7 @@
 }
 .slider__index:hover {
     flex-grow: 3;
+    cursor: pointer;
 }
 .index__number {
     padding: 0 16px;
