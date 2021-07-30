@@ -13,8 +13,10 @@
     --margin-body: 80px;
     --translateX-left-nav: -100px;
     --translateX-right-nav: 100px;
-    --margin-each-part: 16px;
+    --margin-each-part: 32px;
     --border-radius-card: 4px;
+    --pull-reight-list-option-product: 16px;
+    --translateY-cart-icon-card-title: 0%;
 }
 
 * {
