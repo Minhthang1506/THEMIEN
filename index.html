@@ -19,7 +19,50 @@
         <!-- Begin: header -->
         <header class="header">
             <div class="header--grid">
-                <navigation class="navbar">
+                <div class="navbar-mobile">
+                    <label for="navbar-mobile--is-close-navbar"><i class="fas fa-bars navbar-mobile__icon"></i></label>
+                    <input type="checkbox" hidden name="" id="navbar-mobile--is-close-navbar">
+                    <label class="navbar-mobile-overlay" for="navbar-mobile--is-close-navbar"></label>
+                    <div class="navbar-mobile-list">
+    
+                        <ul class="navbar-moblie-list__container">
+                            <li class="navbar-mobile__item">
+                                <div class="navbar-mobile__title-wrapper">
+                                    <span class="navbar-mobile__item--title">Sản phẩm
+                                    </span>                    
+                                    <label for="navbar-mobile__item--product" class="fas fa-angle-right navbar-mobile__item--icon product-icon"></label>
+                                </div>
+                                <input type="checkbox" hidden id= "navbar-mobile__item--product">
+                                <ul class="navbar-mobile__sublist product-sublist">
+                                    <li class="navbar-mobile__subitem">Làm đẹp</li>
+                                    <li class="navbar-mobile__subitem">Trang sức</li>
+                                    <li class="navbar-mobile__subitem">Trang trí</li>
+                                </ul>
+                            </li>
+
+                            <li class="navbar-mobile__item">
+                                <div class="navbar-mobile__title-wrapper">
+                                    <span class="navbar-mobile__item--title">Blog
+                                    </span>                    
+                                    <label for="navbar-mobile__item--blog" class="fas fa-angle-right navbar-mobile__item--icon"></label>
+                                </div>
+                                <input type="checkbox" hidden id= "navbar-mobile__item--blog">
+                                <ul class="navbar-mobile__sublist blog-sublist .navbar-mobile__unexist-subitem">
+                                    <li class="navbar-mobile__subitem">Tất cả</li>
+                                    <li class="navbar-mobile__subitem">Đá quý</li>
+                                    <li class="navbar-mobile__subitem">Phong thủy</li>
+                                    <li class="navbar-mobile__subitem">Chia sẻ làm đẹp</li>
+                                </ul>
+                            </li>
+
+                            <li class="navbar-mobile__item navbar-mobile__unexist-subitem">Giới thiệu</li>
+                            <li class="navbar-mobile__item navbar-mobile__unexist-subitem"><span class="far fa-heart navbar-mobile__unexist-subitem-icon"></span>Register/login</li>
+                            <li class="navbar-mobile__item navbar-mobile__unexist-subitem"><span class="far fa-user navbar-mobile__unexist-subitem-icon"></span>Register/login</li>
+                        </ul>
+                        
+                    </div>
+                </div>
+                <navigation class="navbar navbar-mobile--hidden">
                     <div class="navbar__list">
                         <div class="navbar__item">
                             <div class="navbar__content-wrapper">
@@ -67,7 +110,7 @@
                     </div>
                 </navigation>
                 <div class="header__title">the mien</div>
-                <div class="account">
+                <div class="account navbar-mobile--hidden">
                     <div class="account__list">
                         <div class="account__item">login / register</div>
                         <div class="account__item">
@@ -217,7 +260,7 @@
                             <span class="ti-search option-icon icon-hidden">
                                 <div class="option-tooltip">Quick view</div>
                             </span>
-                            <span class="ti-heart option-icon">
+                            <span class="far fa-heart option-icon">
                                 <div class="option-tooltip">Add to Wishlist</div>
                             </span>
                         </div>

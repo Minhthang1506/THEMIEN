@@ -54,5 +54,13 @@ html {
         opacity: 1;
     }
 }
+@keyframes stretch {
+    from {
+        height: 0;
+    }
+    to {
+        height: auto;
+    }
+}
 
 /* End: Animation =================================================================*/
