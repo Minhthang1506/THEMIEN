@@ -280,6 +280,7 @@
         list-style-type: none;
         overflow: hidden;
         height: 0px;
+        transition: all .5s ease;
     }
     .header .navbar-mobile__subitem {
         display: block;
@@ -290,14 +291,14 @@
         font-weight: lighter;
     }
     .header .navbar-mobile__item #navbar-mobile__item--product:checked ~ .product-sublist {
-        height:fit-content  ;
+        height: 110px  ;
         border-bottom: 1px solid #ddd;
     }
     .header .navbar-mobile__item #navbar-mobile__item--product:checked ~ .product-icon {
         transform: rotate(90deg);
     }
     .header .navbar-mobile__item #navbar-mobile__item--blog:checked ~ .blog-sublist {
-        height:auto;
+        height:110px;
         border-bottom: 1px solid #ddd;
     }
 }

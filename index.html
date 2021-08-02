@@ -30,7 +30,7 @@
                                 <div class="navbar-mobile__title-wrapper">
                                     <span class="navbar-mobile__item--title">Sản phẩm
                                     </span>                    
-                                    <label for="navbar-mobile__item--product" class="fas fa-angle-right navbar-mobile__item--icon product-icon"></label>
+                                    <label for="navbar-mobile__item--product" class="fas fa-angle-right navbar-mobile__item--icon" id="navbar-mobile__item--product-icon"></label>
                                 </div>
                                 <input type="checkbox" hidden id= "navbar-mobile__item--product">
                                 <ul class="navbar-mobile__sublist product-sublist">
@@ -44,7 +44,7 @@
                                 <div class="navbar-mobile__title-wrapper">
                                     <span class="navbar-mobile__item--title">Blog
                                     </span>                    
-                                    <label for="navbar-mobile__item--blog" class="fas fa-angle-right navbar-mobile__item--icon"></label>
+                                    <label for="navbar-mobile__item--blog" class="fas fa-angle-right navbar-mobile__item--icon" id="navbar-mobile__item--blog-icon"></label>
                                 </div>
                                 <input type="checkbox" hidden id= "navbar-mobile__item--blog">
                                 <ul class="navbar-mobile__sublist blog-sublist .navbar-mobile__unexist-subitem">
@@ -289,6 +289,38 @@
                 header.style.height = "calc(var(--header-height-nomal) / 1.5)";
             } else {
                 header.style.height = "var(--header-height-nomal)";
+            }
+        }
+
+        var nav_product_icon = document.getElementById('navbar-mobile__item--product-icon');
+        var nav_product_sublist_isOpen = false;
+        nav_product_icon.addEventListener('click', function() {
+            nav_product_icon_clicked(this)
+        })
+        function nav_product_icon_clicked(it) {
+            if(!nav_product_sublist_isOpen) {
+                it.style.transform = "rotate(90deg)"
+                nav_product_sublist_isOpen = true;
+            }
+            else {
+                it.style.transform = "rotate(0deg)"
+                nav_product_sublist_isOpen = false;
+            }
+        }
+
+        var nav_blog_icon = document.getElementById('navbar-mobile__item--blog-icon');
+        var nav_blog_sublist_isOpen = false;
+        nav_blog_icon.addEventListener('click', function() {
+            nav_blog_icon_clicked(this)
+        })
+        function nav_blog_icon_clicked(it) {
+            if(!nav_blog_sublist_isOpen) {
+                it.style.transform = "rotate(90deg)"
+                nav_blog_sublist_isOpen = true;
+            }
+            else {
+                it.style.transform = "rotate(0deg)"
+                nav_blog_sublist_isOpen = false;
             }
         }
     </script>
